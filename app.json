@@ -1,8 +1,8 @@
 {
   "id": "57be671e-0a24-4db8-b8a2-ec4fdd61c2ae",
   "name": "Manual Subscribing",
-  "publisher": "KNH",
-  "version": "1.0.0.6",
+  "publisher": "Keith How",
+  "version": "1.0.0.7",
   "brief": "Manual Subscribing",
   "description": "Manual Subscribing",
   "privacyStatement": "",
@@ -16,8 +16,8 @@
   "application": "20.0.0.0",
   "idRanges": [
     {
-      "from": 52500,
-      "to": 52549
+      "from": 52030,
+      "to": 52039
     }
   ],
   "resourceExposurePolicy": {

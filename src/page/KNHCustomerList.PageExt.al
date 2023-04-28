@@ -1,7 +1,7 @@
 /// <summary>
 /// PageExt "KNH_CustomerList" extends Customer List 22
 /// </summary>
-pageextension 52501 "KNH_CustomerList" extends "Customer List"
+pageextension 52030 "KNH_CustomerList" extends "Customer List"
 {
     actions
     {
