@@ -1,0 +1,32 @@
+{
+  "id": "57be671e-0a24-4db8-b8a2-ec4fdd61c2ae",
+  "name": "Manual Subscribing",
+  "publisher": "KNH",
+  "version": "1.0.0.6",
+  "brief": "Manual Subscribing",
+  "description": "Manual Subscribing",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "./logo/knh.jpg",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "20.0.0.0",
+  "idRanges": [
+    {
+      "from": 52500,
+      "to": 52549
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "9.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
