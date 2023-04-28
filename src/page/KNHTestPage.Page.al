@@ -1,7 +1,7 @@
 /// <summary>
 /// Page KNH_TestPage (ID 52500).
 /// </summary>
-page 52031 "KNH_TestPage"
+page 52030 "KNH_TestPage"
 {
     Caption = 'Test Page';
     PageType = List;
