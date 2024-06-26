@@ -1,7 +1,7 @@
 /// <summary>
-/// PageExt "KNH_CustomerList" extends Customer List 22
+/// PageExt "KNH CustomerList" extends Customer List 22
 /// </summary>
-pageextension 52030 "KNH_CustomerList" extends "Customer List"
+pageextension 52030 "KNH CustomerList" extends "Customer List"
 {
     actions
     {
@@ -13,7 +13,11 @@ pageextension 52030 "KNH_CustomerList" extends "Customer List"
                 ToolTip = 'Manual Subscribing';
                 Caption = 'Manual Subscribing';
                 Image = TestFile;
-                RunObject = Page KNH_TestPage;
+                Promoted = true;
+                PromotedIsBig = true;
+                PromotedCategory = Category7;
+                PromotedOnly = true;
+                RunObject = Page "KNH TestPage";
             }
         }
     }

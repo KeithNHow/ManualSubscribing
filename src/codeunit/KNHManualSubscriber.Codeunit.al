@@ -1,10 +1,12 @@
 /// <summary>
-/// Codeunit KNH_Manual Subscriber (ID 52501).
+/// Codeunit KNH ManualSubscriber (ID 52501).
+/// EventSubscriberInstance => Specifies how event subscriber functions in a codeunit are bound to the codeunit instance and the events that they subscribe to.
+/// Manual => Event Subscriber bound to event only if the BINDSUBSCRIPTION method is called from the code that raises the event.
 /// </summary>
-codeunit 52031 "KNH_ManualSubscriber"
+codeunit 52031 "KNH ManualSubscriber"
 {
     EventsubscriberInstance = Manual;
-    [EventSubscriber(ObjectType::Page, Page::KNH_TestPage, 'ClickMe', '', false, false)]
+    [EventSubscriber(ObjectType::Page, Page::"KNH TestPage", 'ClickMe', '', false, false)]
     local procedure ManualFunc()
     begin
         Message('Manual Subscription Event.');

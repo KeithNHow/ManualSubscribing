@@ -1,7 +1,8 @@
 /// <summary>
-/// Page KNH_TestPage (ID 52500).
+/// Page KNH TestPage (ID 52500).
+/// BindSubscription => Binds the event subscriber methods in the codeunit to the current codeunit instance for handling the events that they subscribe to. This essentially activates the subscriber functions for the codeunit instance.
 /// </summary>
-page 52030 "KNH_TestPage"
+page 52030 "KNH TestPage"
 {
     Caption = 'Test Page';
     PageType = List;
@@ -12,16 +13,20 @@ page 52030 "KNH_TestPage"
     {
         area(Processing)
         {
-            action(KNH_ClickMe)
+            action(KNHClickMe)
             {
                 ApplicationArea = All;
                 Caption = 'Click Me';
                 ToolTip = 'Click Me';
+                Promoted = true;
+                PromotedIsBig = true;
+                PromotedCategory = Process;
+                PromotedOnly = true;
                 Image = Cloud;
 
                 trigger OnAction()
                 var
-                    ManualSubscriber: Codeunit "KNH_ManualSubscriber";
+                    ManualSubscriber: Codeunit "KNH ManualSubscriber";
                 begin
                     BindSubscription(ManualSubscriber);
                     ClickMe();
