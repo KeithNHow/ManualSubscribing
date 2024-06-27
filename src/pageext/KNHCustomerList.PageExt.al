@@ -17,7 +17,7 @@ pageextension 52030 "KNH CustomerList" extends "Customer List"
                 PromotedIsBig = true;
                 PromotedCategory = Category7;
                 PromotedOnly = true;
-                RunObject = Page "KNH TestPage";
+                RunObject = page "KNH TestPage";
             }
         }
     }

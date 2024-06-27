@@ -5,7 +5,7 @@
 /// </summary>
 codeunit 52031 "KNH ManualSubscriber"
 {
-    EventsubscriberInstance = Manual;
+    EventSubscriberInstance = Manual;
     [EventSubscriber(ObjectType::Page, Page::"KNH TestPage", 'ClickMe', '', false, false)]
     local procedure ManualFunc()
     begin

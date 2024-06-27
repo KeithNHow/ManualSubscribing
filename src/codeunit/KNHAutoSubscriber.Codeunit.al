@@ -5,7 +5,7 @@
 /// </summary>
 codeunit 52030 "KNH AutoSubscriber"
 {
-    EventsubscriberInstance = StaticAutomatic;
+    EventSubscriberInstance = StaticAutomatic;
     [EventSubscriber(ObjectType::Page, Page::"KNH TestPage", 'ClickMe', '', false, false)]
     local procedure AutoFunc()
     begin
