@@ -9,6 +9,6 @@ codeunit 52031 "KNH ManualSubscriber"
     [EventSubscriber(ObjectType::Page, Page::"KNH TestPage", 'ClickMe', '', false, false)]
     local procedure ManualFunc()
     begin
-        Message('Manual Subscription Event.');
+        Message('Manual Subscription Event');
     end;
 }

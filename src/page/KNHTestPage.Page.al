@@ -29,7 +29,7 @@ page 52030 "KNH TestPage"
                     ManualSubscriber: Codeunit "KNH ManualSubscriber";
                 begin
                     BindSubscription(ManualSubscriber);
-                    ClickMe();
+                    this.ClickMe();
                     UnbindSubscription(ManualSubscriber);
                 end;
             }

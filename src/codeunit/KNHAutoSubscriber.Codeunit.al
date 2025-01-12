@@ -9,6 +9,6 @@ codeunit 52030 "KNH AutoSubscriber"
     [EventSubscriber(ObjectType::Page, Page::"KNH TestPage", 'ClickMe', '', false, false)]
     local procedure AutoFunc()
     begin
-        Message('Auto Subscription Event.');
+        Message('Auto Subscription Event');
     end;
 }
