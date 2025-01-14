@@ -26,12 +26,12 @@ page 52030 "KNH TestPage"
 
                 trigger OnAction()
                 var
-                    Subscriber2: Codeunit "KNH Subscriber 2";
+                    ManualSubscriber: Codeunit "KNH Manual Subscriber";
                 begin
-                    unbindSubscription(Subscriber2);
-                    this.ClickMe(); //Show only Subscriber 1
-                    bindSubscription(Subscriber2);
-                    this.ClickMe(); //Show both Subscriber 1 and Subscriber 2
+                    unbindSubscription(ManualSubscriber);
+                    this.ClickMe(); //Show only Auto Subscriber
+                    bindSubscription(ManualSubscriber);
+                    this.ClickMe(); //Show both Subscribers
                 end;
             }
         }

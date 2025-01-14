@@ -3,11 +3,11 @@
 /// /// EventSubscriberInstance => Specifies how event subscriber functions in a codeunit are bound to the codeunit instance and the events that they subscribe to.
 /// StaticAutomatic => Event Subscriber bound to event atutomatically when called from the code that raises the event.
 /// </summary>
-codeunit 52030 "KNH Subscriber 1"
+codeunit 52030 "KNH Auto Subscriber"
 {
     EventSubscriberInstance = StaticAutomatic;
     [EventSubscriber(ObjectType::Page, Page::"KNH TestPage", 'ClickMe', '', false, false)]
-    local procedure Func1()
+    local procedure AutoFunc()
     begin
         Message('This is Subscriber Event 1');
     end;
