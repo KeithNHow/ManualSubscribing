@@ -16,8 +16,8 @@ page 52030 "KNH TestPage"
             action(KNHClickMe)
             {
                 ApplicationArea = All;
-                Caption = 'Click Me';
-                ToolTip = 'Click Me';
+                Caption = 'Subscribe';
+                ToolTip = 'Show Subscription';
                 Promoted = true;
                 PromotedIsBig = true;
                 PromotedCategory = Process;
@@ -28,10 +28,10 @@ page 52030 "KNH TestPage"
                 var
                     ManualSubscriber: Codeunit "KNH ManualSubscriber";
                 begin
-                    BindSubscription(ManualSubscriber);
-                    this.ClickMe();
-                    UnbindSubscription(ManualSubscriber);
-                    this.ClickMe();
+                    unbindSubscription(ManualSubscriber);
+                    this.ClickMe(); //Show only Auto Subscription
+                    bindSubscription(ManualSubscriber);
+                    this.ClickMe(); //Show both Subscriptions
                 end;
             }
         }
