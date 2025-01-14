@@ -31,6 +31,7 @@ page 52030 "KNH TestPage"
                     BindSubscription(ManualSubscriber);
                     this.ClickMe();
                     UnbindSubscription(ManualSubscriber);
+                    this.ClickMe();
                 end;
             }
         }
