@@ -6,7 +6,7 @@ permissionset 52030 "KNH Manual Subs"
     Assignable = true;
     Caption = 'Manual Subscriptions', MaxLength = 30;
     Permissions =
-        codeunit "KNH ManualSubscriber" = X,
-        codeunit "KNH AutoSubscriber" = X,
-        page "KNH TestPage" = X;
+        page "KNH TestPage" = X,
+        codeunit "KNH Subscriber 1" = X,
+        codeunit "KNH Subscriber 2" = X;
 }
