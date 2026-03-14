@@ -1,5 +1,5 @@
 /// <summary>
-/// Page KNH TestPage (ID 52500).
+/// This page is used to demonstrate the use of Auto and Manual event subscriptions.
 /// BindSubscription => Binds the event subscriber methods in the codeunit to the current codeunit instance for handling the events that they subscribe to. This essentially activates the subscriber functions for the codeunit instance.
 /// </summary>
 page 52030 "KNH TestPage"
@@ -37,9 +37,6 @@ page 52030 "KNH TestPage"
         }
     }
 
-    /// <summary>
-    /// Integration event to demo auto and manual subcriptions.
-    /// </summary>
     [IntegrationEvent(false, false)]
     local procedure ClickMe()
     begin

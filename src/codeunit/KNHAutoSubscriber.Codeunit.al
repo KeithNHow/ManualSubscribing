@@ -1,7 +1,6 @@
 /// <summary>
-/// Codeunit "KNH AutoSubscriber" (ID 52030).
-/// /// EventSubscriberInstance => Specifies how event subscriber functions in a codeunit are bound to the codeunit instance and the events that they subscribe to.
-/// StaticAutomatic => Event Subscriber bound to event atutomatically when called from the code that raises the event.
+/// This codeunit demonstrates the use of automatic event subscriptions.
+/// Use of the staticAutomatic value means that the event subscriber functions in the codeunit are automatically bound to the codeunit instance for handling the events that they subscribe to. This essentially activates the subscriber functions for the codeunit instance without needing to explicitly bind them in code. This is the default behavior.
 /// </summary>
 codeunit 52030 "KNH Auto Subscriber"
 {

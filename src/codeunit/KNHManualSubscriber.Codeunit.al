@@ -1,7 +1,6 @@
 /// <summary>
-/// Codeunit KNH ManualSubscriber (ID 52501).
-/// EventSubscriberInstance => Specifies how event subscriber functions in a codeunit are bound to the codeunit instance and the events that they subscribe to.
-/// Manual => Event Subscriber bound to event only if the BINDSUBSCRIPTION method is called from the code that raises the event.
+/// This codeunit is used to demonstrate the use of Manual event subscriptions.
+/// Use of the Manual property means that the event subscriber functions in the codeunit are only bound to the codeunit instance when the BINDSUBSCRIPTION method is called from the code that raises the event.
 /// </summary>
 codeunit 52031 "KNH Manual Subscriber"
 {
