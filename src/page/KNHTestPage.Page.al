@@ -28,10 +28,10 @@ page 52030 "KNH TestPage"
                 var
                     ManualSubscriber: Codeunit "KNH Manual Subscriber";
                 begin
-                    unbindSubscription(ManualSubscriber);
-                    this.ClickMe(); //Show only Auto Subscriber
                     bindSubscription(ManualSubscriber);
                     this.ClickMe(); //Show both Subscribers
+                    unbindSubscription(ManualSubscriber);
+                    this.ClickMe(); //Show only Auto Subscriber
                 end;
             }
         }
